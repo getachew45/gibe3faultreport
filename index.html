@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="en">
+     <head>
+         <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>GIBE III Fault Report</title>
+            <link rel="stylesheet" href="style.css">
+         </head> 
+         <body>
+             <div class="container"> 
+                <h1>GIBE III HEP Fault Recording Form</h1>
+                 <form id="faultForm"> 
+                    <label>Faulty Unit / Line</label> 
+                    <input type="text" id="faultyUnit" required>
+                     <label>Faulted Equipment</label>
+                      <input type="text" id="faultedEquipment" required>
+                       <label>Effect of Fault</label>
+                        <textarea id="effectFault"></textarea>
+                         <label>Total Shut Down</label>
+                         <input type="text" id="totalShutdown">
+                          <label>Partial Shut Down</label>
+                           <input type="text" id="partialShutdown">
+                            <label>Transient</label> 
+                            <input type="text" id="transient"> 
+                            <label>Others</label>
+                             <input type="text" id="others">
+                              <label>Interruption Date & Time</label>
+                               <input type="datetime-local" id="interruptionDate">
+                                <label>Restoration Date & Time</label>
+                                 <input type="datetime-local" id="restorationDate">
+                                  <label>Main Signals Appeared on SCADA</label>
+                                   <textarea id="scada"></textarea> 
+                                   <label>Group A</label>
+                                    <textarea id="groupA"></textarea>
+                                     <label>Group B</label> 
+                                     <textarea id="groupB"></textarea>
+                                      <label>Group C</label>
+                                       <textarea id="groupC"></textarea> 
+                                       <label>Group D</label>
+                                        <textarea id="groupD"></textarea> 
+                                        <label>Remedial Action Taken</label>
+                                         <textarea id="remedialAction"></textarea> 
+                                         <label>Other Comments</label>
+                                          <textarea id="comments"></textarea> 
+                                          <label>Operator Name</label> 
+                                          <input type="text" id="operatorName"> 
+                                          <label>Operator Signature</label> 
+                                          <input type="text" id="operatorSignature">
+                                           <label>Operation Manager Name</label>
+                                            <input type="text" id="managerName" value="Dejene Guta">
+                                             <label>Report Date & Time</label>
+                                              <input type="datetime-local" id="reportDate"> 
+                                              <button type="submit">
+                                                 Submit Report
+                                                 </button> 
+                                                </form>
+                                             </div>
+                                              <script type="module" src="app.js"></script>
+                                             </body>
+                                             </html> 
